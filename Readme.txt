@@ -333,8 +333,8 @@ data will be saved in the foler <TableExp/Result>.
 To generate figures of tabular results:
 
 cd /PATH/TO/TableExp
-rm -rf ./Resultmixdata/*
-cp -r ./Result/* ./Resultmixdata/
+rm -rf ./Resultmixtable/*
+cp -r ./Result/* ./Resultmixtable/
 python ./Figureutils/figureMixTablemultiarm.py
 
 Figures will be shown and saved in the folder <TableExp/Result>
@@ -345,7 +345,7 @@ The codes are in the folder <DeepExp>
 
 To run the experiment:
 
-cd /PATH/TO/CODE/TableExp
+cd /PATH/TO/CODE/DeepExp
 rm -rf ./logs/*
 nohup bash ./run.sh > run.out 2>&1 &
 
@@ -353,7 +353,7 @@ data will be saved in the foler <DeeqExp/logs>.
 
 To generate figures of deep setting experiment:
 
-cd /PATH/TO/CODE/TableExp
+cd /PATH/TO/CODE/DeepExp
 python ./figure_tablemix_result.py
 
 Figures will be shown and saved in the folder <DeeqExp/figures>
